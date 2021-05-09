@@ -1,38 +1,56 @@
-.App {
-  text-align: center;
+
+.tinder__cards {
+	position: relative;
+    width: 600px;
+	max-width: 80vw;
+	height: 50vh;
+	padding: 20px;
+	border-radius: 1em;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0px 5px 15px 0px rgba(59,59,59,0.5);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.tinder__cards > h3 {
+    color: white;
+    position: absolute;
+    bottom: 10px;
+    background-color: rgba(59,59,59,0.5);
+    padding: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.tinder__cards__end {
+    padding-top: 10vh;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    font-weight: 100;
+    text-align: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.tinder__image {
+	border-radius: 0.25em;
 }
 
-.App-link {
-  color: #61dafb;
+.card__container {
+    display: flex;
+    justify-content: center;
+    margin-top: 5vh;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.swipe {
+    /* To set the cards in the same position */
+    position: absolute;
+}
+
+.swipe__buttons {
+    position: fixed;
+    bottom: 10vh;
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.swipe__buttons .MuiIconButton-root {
+    background-color: white;
+    box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.3) !important;
 }

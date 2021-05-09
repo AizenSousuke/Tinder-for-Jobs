@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# Tinder for Jobs
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A small project that showcases React JS with Material UI. Built using data from Google Firebase Database.
 
 ## Available Scripts
 
