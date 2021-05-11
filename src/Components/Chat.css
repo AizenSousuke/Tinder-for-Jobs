@@ -5,6 +5,18 @@
 	padding: 20px;
 	height: 70px;
 	border-bottom: 1px solid rgb(243, 243, 243);
+	position: relative;
+}
+
+.chat__unread {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 20px;
+	height: 70px;
+	border-bottom: 1px solid rgb(243, 243, 243);
+	position: relative;
+	background-color: rgb(255, 242, 242);
 }
 
 .chat__image {
@@ -25,4 +37,10 @@
 	color: lightgrey;
 	font-weight: 200;
 	padding: 10px;
+}
+
+.chat__badge {
+	position: absolute;
+	top: 15px;
+	right: 15px;
 }

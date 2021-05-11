@@ -10,7 +10,7 @@ const Chats = ({ chatData = [] }) => {
 						return (
 							<Link
 								to={`/chat/${chat.name}`}
-								style={{ textDecoration: "none" }}
+								style={{ textDecoration: "none", color: "rgba(255,119,119,1)" }}
 								key={key}
 							>
 								<Chat
@@ -18,6 +18,7 @@ const Chats = ({ chatData = [] }) => {
 									message={chat.message}
 									timestamp={chat.timestamp}
 									profilepic={chat.profilepic}
+									unread={chat.unread}
 								/>
 							</Link>
 						);

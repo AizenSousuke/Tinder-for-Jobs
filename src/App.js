@@ -23,10 +23,21 @@ function App() {
 							chatData={[
 								{
 									name: "Nintendo",
-									message: "Whats up",
+									message:
+										"Whats up? Are you looking for a job change?",
 									timestamp: "10 seconds ago",
 									profilepic:
-										"https://cdn4.iconfinder.com/data/icons/avatars-xmas-giveaway/128/batman_hero_avatar_comics-512.png",
+										"https://content.fortune.com/wp-content/uploads/2015/07/gettyimages-480544636.jpg",
+									unread: true,
+								},
+								{
+									name: "Tesla",
+									message:
+										"Whats up? Are you looking for a job change?",
+									timestamp: "10 seconds ago",
+									profilepic:
+										"https://static.theceomagazine.net/wp-content/uploads/2018/10/15093202/elon-musk.jpg",
+									unread: false,
 								},
 							]}
 						/>

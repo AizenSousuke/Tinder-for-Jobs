@@ -14,27 +14,27 @@ const Chatscreen = ({ name }) => {
 			type: "receiver",
 			name: companyName,
 			image: "...",
-			message: "Whats up",
+			message: "Whats up? Are you looking for a job change?",
 		},
 		{
 			type: "sender",
 			name: "You",
 			image: "...",
-			message: "Fine",
+			message: "Yes. I'm interested.",
 		},
 		{
 			type: "receiver",
 			name: companyName,
 			image: "...",
 			message:
-				"Whats in? Incididunt nostrud est est tempor tempor minim minim esse incididunt ad nisi duis adipisicing magna. Reprehenderit laborum id in dolor id in dolor dolore. In eiusmod fugiat sint nulla laboris dolore exercitation qui. Esse ad in officia reprehenderit fugiat deserunt cillum ullamco duis. Aliqua esse ullamco pariatur amet irure proident veniam ea elit. Irure eiusmod eiusmod dolore dolore sunt do Lorem consequat.",
+				"Please provide your resume if you're interested in the position.",
 		},
 		{
 			type: "sender",
 			name: "You",
 			image: "...",
 			message:
-				"Nothing. In amet tempor ad officia. Deserunt sunt eu sint mollit proident ad. In eu amet quis non in adipisicing. Dolore proident eu proident culpa cillum cillum Lorem tempor. Nisi minim aliquip nisi commodo ex cillum fugiat minim. Deserunt aute incididunt tempor in magna irure dolore velit.",
+				"My resume is at http://resume.com/resume.docx",
 		},
 	]);
 
@@ -50,7 +50,7 @@ const Chatscreen = ({ name }) => {
 			},
 		]);
 		setInput("");
-		lastMessage.current?.scrollIntoView({ behavior: "smooth" });
+		lastMessage.current?.scrollIntoView();
 		setTimeout(() => {
 			setMessages((messages) => [
 				...messages,
@@ -58,7 +58,7 @@ const Chatscreen = ({ name }) => {
 					type: "receiver",
 					name: companyName,
 					image: "...",
-					message: "Veniam sit culpa eu anim.",
+					message: "Occaecat aliquip ipsum occaecat ut Lorem veniam exercitation tempor..",
 				},
 			]);
 			lastMessage.current?.scrollIntoView({ behavior: "smooth" });
@@ -97,7 +97,7 @@ const Chatscreen = ({ name }) => {
 					</div>
 				);
 			})}
-			<div ref={lastMessage} style={{ height: "15vh" }}></div>
+			<div ref={lastMessage} style={{ height: "20vh" }}></div>
 			<div className="chatscreen__input">
 				<Input
 					placeholder={"Type a message"}
