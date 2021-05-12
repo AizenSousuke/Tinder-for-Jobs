@@ -29,6 +29,33 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
+### `yarn deploy`
+
+Builds the app for production in the build folder and deploys it to firebase.
+Ensure that you have the firebase config file called "firebase.js" in your src folder:
+```
+import firebase from "firebase/app";
+
+// Add the Firebase products that you want to use
+// import "firebase/auth";
+import "firebase/firestore";
+const firebaseConfig = {
+	apiKey: "",
+	authDomain: "",
+	databaseURL: "",
+	projectId: "",
+	storageBucket: "",
+	messagingSenderId: "",
+	appId: "",
+};
+
+const firebaseApp = firebase.initializeApp(firebaseConfig);
+
+const database = firebaseApp.firestore();
+
+export default database;
+```
+
 ### `yarn eject`
 
 **Note: this is a one-way operation. Once you `eject`, you can’t go back!**

@@ -68,7 +68,7 @@ const Chatscreen = ({ name }) => {
 	const lastMessage = useRef();
 
 	return (
-		<div className="chatscreen">
+		<div className="chatscreen content">
 			<div>
 				<h3 className="chatscreen__timestamp">{companyName}</h3>
 				<p className="chatscreen__timestamp">

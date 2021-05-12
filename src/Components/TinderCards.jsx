@@ -22,7 +22,7 @@ const TinderCards = ({ onSwipeLeft, onSwipeRight }) => {
 	}, []);
 
 	return (
-		<div className="card__container">
+		<div className="card__container content">
 			{company.map((card, key) => (
 				<TinderCard
 					key={key}

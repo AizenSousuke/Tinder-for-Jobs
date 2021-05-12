@@ -26,6 +26,7 @@
     border-radius: 1em;
     margin-left: 10px;
     max-width: 50vw;
+    word-break: break-all;
 }
 
 .chatscreen__bubble__reply {

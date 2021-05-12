@@ -4,7 +4,7 @@ import Chat from "./Chat";
 
 const Chats = ({ chatData = [] }) => {
 	return (
-		<div className="chats">
+		<div className="chats content">
 			{chatData
 				? chatData.map((chat, key) => {
 						return (
