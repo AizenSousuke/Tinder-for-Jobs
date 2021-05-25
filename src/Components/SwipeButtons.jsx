@@ -9,22 +9,51 @@ import {
 import React from "react";
 import "../App.css";
 
-const SwipeButtons = () => {
+const SwipeButtons = ({
+	company,
+	onButtonsClicked,
+	refresh,
+	dislike,
+	bookmark,
+	like,
+	contact,
+}) => {
 	return (
 		<div className="swipe__buttons">
-			<IconButton>
+			<IconButton
+				onClick={() => {
+					console.log(company);
+					onButtonsClicked(company, refresh);
+				}}
+			>
 				<ReplayOutlined fontSize="large" color={"error"} />
 			</IconButton>
-			<IconButton>
-				<CloseOutlined fontSize="large"color={"primary"} />
+			<IconButton
+				onClick={() => {
+					onButtonsClicked(company, dislike);
+				}}
+			>
+				<CloseOutlined fontSize="large" color={"primary"} />
 			</IconButton>
-			<IconButton>
+			<IconButton
+				onClick={() => {
+					onButtonsClicked(company, bookmark);
+				}}
+			>
 				<StarRateOutlined fontSize="large" color={"error"} />
 			</IconButton>
-			<IconButton>
+			<IconButton
+				onClick={() => {
+					onButtonsClicked(company, like);
+				}}
+			>
 				<FavoriteOutlined fontSize="large" color={"secondary"} />
 			</IconButton>
-			<IconButton>
+			<IconButton
+				onClick={() => {
+					onButtonsClicked(company, contact);
+				}}
+			>
 				<FlashOnOutlined fontSize="large" color={"error"} />
 			</IconButton>
 		</div>
