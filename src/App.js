@@ -9,6 +9,7 @@ import Chatscreen from "./Components/Chatscreen";
 import database from "./firebase";
 
 function App() {
+	
 	const [company, setCompany] = useState([]);
 	const [currentCompany, setCurrentCompany] = useState([]);
 	const [swipedRight, setSwipedRight] = useState([]);
@@ -128,11 +129,16 @@ function App() {
 							onSwipeLeft={(e) => onSwipeLeft(e)}
 							onSwipeRight={(e) => onSwipeRight(e)}
 						/>
-						<SwipeButtons
-							onButtonsClicked={buttonActions}
-							company={currentCompany}
-							like={"is liked"}
-						/>
+						{currentCompany !== null ? 
+							currentCompany.length > 0 ?
+								<SwipeButtons
+									onButtonsClicked={buttonActions}
+									company={currentCompany}
+									like={"is liked"}
+								/> : 
+								null : 
+							null }
+						
 					</Route>
 				</Switch>
 			</Router>
