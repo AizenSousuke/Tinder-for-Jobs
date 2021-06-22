@@ -3,7 +3,7 @@
 A small project that showcases React JS with Material UI. Built using data from Google Firebase Database.
 
 ## Screenshots
-![image](https://i.imgur.com/Ok3IsDt.gif)
+<img src="https://i.imgur.com/Ok3IsDt.gif" alt="image" width="50%" height="50%">
 
 ## Available Scripts
 
