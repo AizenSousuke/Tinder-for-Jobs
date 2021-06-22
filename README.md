@@ -2,6 +2,9 @@
 
 A small project that showcases React JS with Material UI. Built using data from Google Firebase Database.
 
+## Screenshots
+![image](https://i.imgur.com/Ok3IsDt.gif)
+
 ## Available Scripts
 
 In the project directory, you can run:
